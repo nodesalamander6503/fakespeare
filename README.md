@@ -7,6 +7,19 @@ If you answered "yes" to any of those questions (or you like Markov chains and t
 # What it is
 
 Fakespeare is a Markov chain implemented in C which is intended to generate fake text that vaguely resembles Shakespeare's plays.
+Here's an example of fakespeare's text:
+
+> II. The prison
+>  Scene II. Rotty, gentle Tybalt, for ever so his offense.
+> 
+> FIRST Cour studience, where all.
+> 
+> [Exc'd. Thus leaving bot!
+> No word makes thee hang TAVILLO.
+> O, let me have so it
+> were more pity dman, look you see referment
+
+## A brief explanation
 
 It is well-known that a monkey typing at a typewriter will *eventually* produce all of Shakespeare's plays.
 Imagine we have an ideal monkey (which might be frictionless and spherical).
@@ -35,6 +48,10 @@ Fakespeare is very easy to use and modify.
 
 If you just want to get some fake Shakespeare, then that's easy.
 Just run `./fakespeare` and await your text.
+
+If you want a particular amount of tokens, you use `./fakespeare n`, where `n` is an integer representing the number of tokens.
+Please make sure to provide a positive integer.
+It does not work for any other text.
 
 ## Training a custom model
 
